@@ -21,6 +21,8 @@ std::ostream& operator<<(std::ostream& os, const Delimiter d){
 	return os;
 }
 
+// Function determines the delimiter type in a file
+// A bit resourceful but it works
 Delimiter getDelimiter(std::string path){
 	// Count number of lines in file delimited by CR and LF symbols
 	std::string line;
